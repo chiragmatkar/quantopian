@@ -10,12 +10,12 @@ Below the 200-day moving average, the average 5-day gain drops to 0.18%.
 '''
 def initialize(context): 
     context.security = sid(679) #American Express 
-#    context.security = sid(33472)  #NIKE
-#    context.security = sid(3766)  #IBM
-#    context.security = sid(2190) #Walt Disney
-#    context.security = sid(23998) #ConcoPhillips
-#    context.security = sid(20940) #United Parcel Services    
-
+    context.security = sid(18034) #Ford
+    context.security = sid(33472)  #NIKE
+    context.security = sid(3766)  #IBM
+    context.security = sid(2190) #Walt Disney
+    context.security = sid(23998) #ConcoPhillips
+    context.security = sid(20940) #United Parcel Services    
 
 def handle_data(context, data):
     average_price = data[context.security].mavg(200)
