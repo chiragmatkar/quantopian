@@ -3,7 +3,6 @@ def initialize(context):
 
 
 def handle_data(context, data):
-    print data,"\n"
     MA1 = data[context.security].mavg(50)
     MA2 = data[context.security].mavg(200)
     
